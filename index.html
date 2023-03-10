@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,59 +9,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo.png" alt="logo" class="logo">
+                <img src="images/mylogo.png" alt="logo" class="logo">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Education">Education</a></li>
+                    <li><a href="#Experience">Experience</a></li>
+                    <li><a href="#Service">Service</a></li>
+                    <li><a href="#Contact">Contact</a></li>
                 </ul>
-                <!-- <div class="toggle-btn">
-                    <img src="images/menu.png" alt="menu">
-                    <img src="images/close.png" alt="close">
-                </div> -->
             </nav>
             <div class="header-text">
+                <h1>Hi There, <br><span>I'm Kuldeep Gupta</span><br>Full Stack Developer ! &</h1>
                 <p>UI/UX Designer</p>
-                <h1>Hi, I'm <span>Kuldeep</span><br>Delhi from India</h1>
             </div>
+            <button type="submit"><a href="https://drive.google.com/file/d/18Qj2wd-zcKos5ZHhkNZWHtZgh8-VN7Em/view?usp=share_link" target="_blank">Download Resume !</a> </button>
         </div>
     </div>
 
     <!------------------------- About-section ----------------->
-
     <section id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/user.png" class="img">
+                    <img src="images/study.png" class="img">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque earum corporis aperiam maiores
-                        praesentium, recusandae accusantium necessitatibus, consequuntur excepturi eos facilis
-                        cupiditate.consequuntur excepturi eos facilis.
-                    </p>
+                    <p>I am aspiring of Web Developement with ReactJs, JavaScript, HTML, CSS. Proficient in C++, Core
+                        JAVA, JAVASCRIPT. Passionate about implementing and launching new projects.</p>
                     <div id="tab-title">
                         <p class="tab-link active-link" onclick="opentap('skill')">Skill</p>
-                        <p class="tab-link" onclick="opentap('experience')">Experience</p>
-                        <p class="tab-link" onclick="opentap('education')">Education</p>
+                        <p class="tab-link" onclick="opentap('experience')">Certification</p>
                     </div>
                     <div class="tab-contents active-contents" id="skill">
                         <ul>
-                            <li><span>UI/UX</span><br> Designing Web/App ibnterfaces</li>
-                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Web Development</span><br>Building Responsive Website</li>
                             <li><span> App Develpment</span><br>Building Android/iOS apps</li>
+                            <li><span>UI/UX</span><br> Designing Web/App ibnterfaces</li>
+                            <li><span>Java</span><br> Building Backend</li>
                         </ul>
                     </div>
-
                     <div class="tab-contents" id="experience">
                         <ul>
                             <li><span>2021- Current</span><br> UI/UX Design Training at ET Institute</li>
@@ -71,44 +65,140 @@
                             <li><span> 2016-2017</span><br>Internship at ekart e-Commerce.</li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2021</span><br> UI/UX Design Training at ET Institute</li>
-                            <li><span>2016</span><br>MBA from MIT Bangalore.</li>
-                            <li><span>2014</span><br>BBA from ISM Bangalore.</li>
-                        </ul>
-                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!------------------------- Education-section ------------------------->
+
+    <section id="Education">
+        <h1 class="sub-title">My Education Details</h1>
+        <div class="container-edu">
+            <div class="education-list">
+                <div class="fstedu">
+                    <h2>Lovely Professional University, Phagwara, Punjab</h2>
+                    <p>MCA(Master of Computer Application)</p>
+                    <p>CGPA: 8.25</p>
+                </div>
+            </div>
+            <div class="education-list">
+                <div class="secedu">
+                    <h2>Maulana Mazhrul Hak University, Patna</h2>
+                    <p>BCA (Bachelors's in Computer Application)</p>
+                    <p>Percentage: 77.8%</p>
+                </div>
+            </div>
+            <div class="education-list">
+                <div class="thrdedu">
+                    <h2>Z.A Ismalia College, Siwan</h2>
+                    <p>Intermediate</p>
+                    <p>Percentage: 54.6%</p>
+                </div>
+            </div>
+            <div class="education-list">
+                <div class="fothedu">
+                    <h2>V.M. High School Cum Inter College, Siwan</h2>
+                    <p>Matriculation</p>
+                    <p>Percentage: 65%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------- Experience-section ---------------------------->
+    <section id="Experience">
+        <h1 class="sub-title">My Experience Details</h1>
+        <div class="container-exp">
+            <div class="experience-list">
+                <div class="myexp">
+                    <pre>
+                        <h2>Delhi Public School                         Siwan, Bihar</h2>                                  
+                        <p>Technical Assistant, Full Time               March. 2020 – July. 2022</p>
+                      <p>                    o	Objective :
+                                Maintain the Student Data, Employee Data, All CBSE training related work
+                                and Provide Support all technical work online classes during COVID-19. 
+                    o	Technology Used :
+	                        MS-Office, Adobe PageMaker, Zoom, Google Meet.</p>
+
+                      </pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------- Service-section --------------------------->
+    <section id="Service">
+        <h1 class="sub-title">My Service Details</h1>
+        <div class="container-ser">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>WEB DESING</h3>
+                    <hr>
+                    <p>Web designing is the process of planning, conceptualizing, and implementing the plan for
+                        designing a website in a way that is functional and offers a good user experience.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>PHOTOGRAPHY</h3>
+                    <hr>
+                    <p>
+                        How do you define photography?
+                        The word Photography literally means 'drawing with light', which derives from the Greek photo,
+                        meaning light and graph, meaning to draw. Photography is the process of recording an image – a
+                        photograph – on lightsensitive film or, in the case of digital photography, via a digital
+                        electronic or magnetic memory.
+                    </p>
                 </div>
 
+                <div class="grid-item">
+                    <h3>WEB DEVELOPER</h3>
+                    <hr>
+                    <p>Web development is the work involved in developing a website for the Internet (World Wide Web) or
+                        an intranet (a private network).</p>
+                </div>
+
+                <div class="grid-item">
+                    <h3>WEB APP DEVELOPING</h3>
+                    <hr>
+                    <p>Mobile app development is the act or process by which a mobile app is developed for mobile
+                        devices, such as personal digital assistants, enterprise digital assistants or mobile phones.
+                        These software applications are designed to run on mobile devices, such as a smartphone or
+                        tablet computer. </p>
+                </div>
             </div>
-        </div>
         </div>
     </section>
 
-    <!------------------------- Services-section ----------------->
-    <section id="Servises">
-        <div class="container">
-            <h1 class="sub-title">About Me</h1>
-            <div class="servises-list">
-                <div>
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, quaerat a minus cum rem consequatur.</p>
-            </div>
-            </div>
-            <div class="servises-list">
-                <div>
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, quaerat a minus cum rem consequatur.</p>
-            </div>
-            </div>
-            <div class="servises-list">
-                <div>
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, quaerat a minus cum rem consequatur.</p>
-            </div>
-            </div>
+    <!--------------------------- Contact-section ------------------------>
+    <section id="Contact">
+        <h1 class="sub-title">Contact Us</h1>
+        <div class="container-cont">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="scroll-up">
+            <a href="#header">
+            </a>
         </div>
     </section>
+
+    <footer>
+        <h2>Copyright @ 2023 KKG</h2>
+    </footer>
+</body>
+</html>
+
     <script>
         const tablinks = document.getElementsByClassName("tab-link");
         const tabcontents = document.getElementsByClassName("tab-contents");
@@ -125,6 +215,12 @@
         }
 
     </script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+<!-- </body>
 
-</html>
+</html> -->
